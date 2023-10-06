@@ -2,8 +2,13 @@
   "name": "truffle-project",
   "version": "0.1.0",
   "description": "Truffle project with SimpleStorage contract",
+  "homepage": "https://github.com/Jyotiraghav/xyz.git",
   "scripts": {
-    "test": "truffle test"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@truffle/hdwallet-provider": "^2.1.7"
